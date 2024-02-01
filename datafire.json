@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "1 - Choisir l'emplacement",
+    "description": "Trouvez un endroit sûr, à l'abri du vent, loin des arbres, des buissons et d'autres matériaux inflammables. Dégagez le sol sur un rayon d'au moins 1 mètre.",
+    "image": "/src/assets/fire/WikiFeu_1 .png"
+  },
+  {
+    "id": 2,
+    "title": "2 - Préparer le sol",
+    "description": "Creusez légèrement le sol ou entourez l'espace choisi de pierres pour créer une barrière.",
+    "image": "/src/assets/fire/WikiFeu_2.png"
+  },
+  {
+    "id": 3,
+    "title": "3 - Rassembler le matériel",
+    "description": "Collectez trois types de bois : l'amadou (matériel fin et sec comme de l'herbe sèche, des feuilles, de la mousse), les brindilles (petites branches fines), et les bûches (branches plus épaisses et bois coupé).",
+    "image": "/src/assets/fire/WikiFeu_3.png"
+  },
+  {
+    "id": 4,
+    "title": "4 - Construire le foyer",
+    "description": "Commencez par un petit tas d'amadou, entourez-le de brindilles en forme de tipi ou de pyramide, puis ajoutez quelques bûches de manière aérée autour.",
+    "image": "/src/assets/fire/WikiFeu_4.png"
+  },
+  {
+    "id": 5,
+    "title": "5 - Allumer le feu",
+    "description": "Frottez une brindille fine contre une plus grosse ou utilisez une pierre pour créer des étincelles et enflammer l'amadou. Soufflez doucement pour attiser les flammes.",
+    "image": "/src/assets/fire/WikiFeu_5.png"
+  },
+  {
+    "id": 6,
+    "title": "6 - Entretenir le feu",
+    "description": "Ajoutez progressivement des brindilles puis des bûches pour nourrir le feu, en veillant à ne pas l'étouffer.",
+    "image": "/src/assets/fire/WikiFeu_6.png"
+  },
+  {
+    "id": 7,
+    "title": "7 - Éteindre le feu",
+    "description": "Assurez-vous que le feu est complètement éteint avant de partir. Versez de l'eau dessus, puis remuez les cendres pour vous assurer qu'aucun braisier n'est actif.",
+    "image": "/src/assets/fire/WikiFeu_7.png"
+  }
+]
