@@ -1,14 +1,14 @@
 nav {
     display: flex;
     border-bottom: 1px solid var(--light-grey);
+    padding-top: 10px;
 
     #logo {
-        margin: 1rem 1rem 0rem 1rem;
+        margin-left: 1rem;
     }
 
     ul {
         display: flex;
-        align-self: end;
         list-style: none;
         margin: auto;
         translate: -20%;
@@ -17,6 +17,7 @@ nav {
         #notice,
         #about {
             margin: 5px 1rem;
+            align-self: end;
             position: relative;
             z-index: 2;
             cursor: pointer;
