@@ -1,6 +1,13 @@
 import "./styles/Shop.css";
+import Header from "../components/Header";
 
 function Shop() {
-  return;
+  return (
+    <div className="Home">
+      <Header
+      headerId="shop-header"
+      headerTitle="Malhalla"/>
+    </div>
+  )
 }
 export default Shop;

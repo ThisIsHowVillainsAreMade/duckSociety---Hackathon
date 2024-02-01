@@ -1,0 +1,23 @@
+.Header {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop-header{
+    background: url("à mettre");
+    font-family: à mettre;
+    background-size: cover;
+}
+#fire-header{
+    background: url("à mettre");
+    font-family: à mettre;
+    background-size: cover;
+}
+#witch-header{
+    background: url("à mettre");
+    font-family: à mettre;
+    background-size: cover;
+}
