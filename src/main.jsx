@@ -2,22 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import Accueil from "./pages/Accueil";
-import BalanceTaSorciere from "./pages/BalanceTaSorciere";
-import MarketplaceViking from "./pages/MarketplaceViking";
-import TutorielPrehistoire from "./pages/TutorielPrehistoire";
-
+import Home from "./pages/Home"
+import Fire from  "./pages/Fire"
+import Shop from "./pages/Shop"
+import Witch from "./pages/Witch"
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
-      { path: "/", element: <Accueil /> },
-      {
-        path: "/tutoriel-pour-homme-prehistorique",
-        element: <TutorielPrehistoire />,
-      },
-      { path: "/marketplace-pour-vikings", element: <MarketplaceViking /> },
-      { path: "/balance-ta-sorciere", element: <BalanceTaSorciere /> },
+      { path: "/", element: <Home /> },
+      {path: "/tuto-feu",element: <Fire />,},
+      { path: "/mallhalla", element: <Shop /> },
+      { path: "/balance-ta-sorciere", element: <Witch /> },
     ],
   },
 ]);
