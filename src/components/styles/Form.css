@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "MedievalSharp";
+  src: url(../../assets/fonts/MedievalSharp-Regular.ttf);
+}
+
 .witchForm {
   display: flex;
   flex-direction: column;
@@ -10,6 +15,7 @@
   border-radius: 8px;
   width: 40svw;
   margin-left: 7svw;
+  font-family: "MedievalSharp";
 }
 
 .formSection {
@@ -28,12 +34,17 @@
 .selection,
 .submitButton {
   display: block;
-  width: 16svw;
+  width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
+  font-family: "MedievalSharp";
+}
+
+.optionSelect {
+  font-family: "MedievalSharp";
 }
 
 .formInput,
@@ -63,7 +74,7 @@
   min-height: 10svh;
   max-height: 15svh;
   resize: vertical;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "MedievalSharp";
 }
 
 .radiosQuestion {
@@ -91,6 +102,13 @@
 input#dataConsent {
   width: 100px;
   margin-right: 10px;
+  display: block;
+  /* width: 16svw; */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .dataDiv {

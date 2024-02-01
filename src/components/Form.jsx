@@ -30,6 +30,7 @@ function Form() {
         <div className="container1">
           {/* INFORMATIONS PERSONNELLES */}
           <div className="informations">
+            <h2>A PROPOS DE VOUS</h2>
             <label htmlFor="firstName">
               <input
                 className="formInput"
@@ -90,6 +91,7 @@ function Form() {
               </option>
             </select>
             {/* RENSEIGNEMENTS SUR LA SORCIERE */}
+            <h2>A PROPOS DE LA SORCIERE</h2>
             <label htmlFor="witchFirstName">
               <input
                 className="formInput"
