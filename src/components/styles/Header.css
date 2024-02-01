@@ -1,16 +1,39 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(../../assets/shop/Norse.otf);
+}
 .Header {
     height: 300px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #shop-header{
-    background: url("à mettre");
-    font-family: à mettre;
+    background: url("../../assets/shop/Mallhalla.jpeg");
+    background-position: 50% 30%;
+    filter: grayscale(100%) ;
+    font-family: 'Norse','sans-serif';
     background-size: cover;
+    color: white;
+    font-size: 5rem;
 }
+
+#shop-header h1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop-header h1::before{
+    filter: brightness(50%);
+}
+
+
+
 #fire-header{
     background: url("à mettre");
     font-family: à mettre;
