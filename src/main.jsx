@@ -12,12 +12,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Accueil /> },
-      { path: "/balance-ta-sorciere", element: <BalanceTaSorciere /> },
-      { path: "/marketplace-pour-vikings", element: <MarketplaceViking /> },
       {
         path: "/tutoriel-pour-homme-prehistorique",
         element: <TutorielPrehistoire />,
       },
+      { path: "/marketplace-pour-vikings", element: <MarketplaceViking /> },
+      { path: "/balance-ta-sorciere", element: <BalanceTaSorciere /> },
     ],
   },
 ]);
