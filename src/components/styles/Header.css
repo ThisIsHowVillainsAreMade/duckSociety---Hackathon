@@ -1,8 +1,10 @@
 @font-face {
-  font-family: "Love";
-  src: url(../../assets/font/LoveYaLikeASister-Regular.ttf);
   font-family: "Norse";
   src: url(../../assets/shop/Norse.otf);
+}
+@font-face {
+  font-family: "Love";
+  src: url(../../assets/fonts/LoveYaLikeASister-Regular.ttf);
 }
 .Header {
   height: 300px;
@@ -38,6 +40,16 @@
   background: url("/src/assets/fire/header-fire.png");
   font-family: "Love", "sans-serif";
   background-size: cover;
+  font-size: 2rem;
+}
+
+#fire-header h1 {
+  font-family: "Love", "sans-serif";
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #witch-header {
   background: url("à mettre");
