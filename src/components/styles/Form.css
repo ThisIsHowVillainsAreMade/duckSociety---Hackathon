@@ -8,13 +8,13 @@
   flex-direction: column;
   justify-content: center;
   color: var(--text);
-  position: relative;
+  /* position: relative; */
   width: 100svw;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
   width: 50%;
-  margin-left: 7svw;
+  /* margin-left: 7svw; */
   font-family: "MedievalSharp";
 }
 
@@ -60,7 +60,7 @@
 }
 
 :is(.formInput, .submitButton, .selection, .textareaForm):hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.5s;
 }
 
