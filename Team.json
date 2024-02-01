@@ -1,0 +1,32 @@
+{
+    "Team": [
+    {
+        "id": 1,
+        "name": "Océane",
+        "imageSRC": "TeamCard/océSmall.png",
+        "linkSRC": "https://www.linkedin.com/in/oaiw/",
+        "gitSRC": "https://github.com/ThisIsHowVillainsAreMade"
+    },
+    {
+        "id": 2,
+        "name": "Ryan",
+        "imageSRC": "TeamCard/RyanSmall.png",
+        "linkSRC": "https://www.linkedin.com/in/ryan-barboza/",
+        "gitSRC": "https://github.com/RetrozDev"
+    },
+    {
+        "id": 3,
+        "name": "Florian",
+        "imageSRC": "TeamCard/FloSmall.png",
+        "linkSRC": "https://www.linkedin.com/in/florian-schaessens/",
+        "gitSRC": "https://github.com/Dolpheus89"
+    },
+    {
+        "id": 4,
+        "name": "Greg",
+        "imageSRC": "TeamCard/GregSmall.png",
+        "linkSRC": "https://www.linkedin.com/in/gr%C3%A9gory-d-754664195/",
+        "gitSRC": "https://github.com/Goodtimenl"
+    }
+    ]
+    }
