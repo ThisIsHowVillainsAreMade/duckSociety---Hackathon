@@ -131,9 +131,11 @@ function Form() {
             <div className="radiosQuestion">
               <p>La sorcière a-t-elle des cheveux roux* ?</p>
               <div className="radios">
-                <input type="radio" /> <p className="inputRadiosText">Oui</p>{" "}
-                <input type="radio" /> <p className="inputRadiosText">Non</p>{" "}
-                <input type="radio" />{" "}
+                <input type="radio" name="choice" />{" "}
+                <p className="inputRadiosText">Oui</p>{" "}
+                <input type="radio" name="choice" />{" "}
+                <p className="inputRadiosText">Non</p>{" "}
+                <input type="radio" name="choice" />{" "}
                 <p className="inputRadiosText">Elle est chauve</p>
               </div>
             </div>

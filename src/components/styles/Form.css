@@ -52,7 +52,7 @@
 .submitButton,
 .textareaForm {
   transform: scale(1);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 :is(.formInput, .selection, .textareaForm):focus {
@@ -61,7 +61,7 @@
 
 :is(.formInput, .submitButton, .selection, .textareaForm):hover {
   transform: scale(1.1);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .textareaForm {
