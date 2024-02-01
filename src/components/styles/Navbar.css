@@ -1,0 +1,73 @@
+nav {
+    display: flex;
+    border-bottom: 1px solid var(--light-grey);
+
+    #logo {
+        margin: 1rem 1rem 0rem 1rem;
+    }
+
+    ul {
+        display: flex;
+        margin: 0 auto;
+        align-self: end;
+        list-style: none;
+
+        #menu,
+        #notice,
+        #about {
+            margin: 5px 1rem;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            background: #e4e4e400;
+
+            &::before {
+                content: "";
+                display: block;
+                height: 9px;
+                width: 1px;
+                background-color: var(--light-grey);
+                position: absolute;
+                z-index: 1;
+                bottom: -9px;
+                left: -1rem;
+                filter: blur(0rem);
+                transition: bottom 0.25s,
+                    filter 0.25s 0.25s,
+                    left 0.25s 0.25s,
+                    height 0.25s,
+                    background 0.25s 0.25s,
+                    width 0.5s 0.25s;
+            }
+        }
+
+        #menu:hover,
+        #notice:hover,
+        #about:hover {
+            &::before {
+                bottom: -1px;
+                left: -5px;
+                height: 25px;
+                width: 120%;
+                z-index: -1;
+                background: var(--gradientBlurHome);
+                box-shadow: var(--gradientShadowHome);
+                filter: blur(0.3rem);
+            }
+        }
+
+        #about {
+            &::after {
+                content: "";
+                display: block;
+                height: 9px;
+                width: 1px;
+                background-color: var(--light-grey);
+                position: absolute;
+                bottom: -9px;
+                right: -1rem;
+            }
+        }
+
+    }
+}
