@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "MedievalSharp";
+  src: url(../../assets/fonts/MedievalSharp-Regular.ttf);
+}
+
+.witchForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text);
+  position: relative;
+  width: 100svw;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 50%;
+  margin-left: 7svw;
+  font-family: "MedievalSharp";
+}
+
+.formSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formInput,
+.selection,
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "MedievalSharp";
+}
+
+.optionSelect {
+  font-family: "MedievalSharp";
+}
+
+.formInput,
+.selection,
+.submitButton,
+.textareaForm {
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+:is(.formInput, .selection, .textareaForm):focus {
+  outline: none;
+}
+
+:is(.formInput, .submitButton, .selection, .textareaForm):hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.textareaForm {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 10svh;
+  max-height: 15svh;
+  resize: vertical;
+  font-family: "MedievalSharp";
+}
+
+.radiosQuestion {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1svh;
+  /* text-align: center; */
+}
+
+.radios {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inputRadiosText {
+  margin-right: 1.5svw;
+}
+
+.dataCheck {
+  display: flex;
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
+input#dataConsent {
+  width: 100px;
+  margin-right: 10px;
+  display: block;
+  /* width: 16svw; */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.dataDiv {
+  display: flex;
+  align-items: center;
+}
+.dataCheckLabel {
+  width: 75%;
+  text-align: justify;
+}
+
+.submitButton {
+  background-color: black;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.315);
+  }
+  &:active {
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1.2);
+    transition: 0.1s;
+  }
+}
+
+.littleLines {
+  font-size: 0.5em;
+  text-align: justify;
+}
