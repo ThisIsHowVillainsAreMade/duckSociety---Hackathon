@@ -74,6 +74,10 @@
                 align-self: flex-end;
                 text-decoration: none;
 
+                &:any-link {
+                    color: #fff;
+                }
+
                 &:visited {
                     color: #fff;
                 }

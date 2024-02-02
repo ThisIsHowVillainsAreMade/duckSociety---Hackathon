@@ -3,42 +3,42 @@
     "id": 1,
     "title": "1 - Choisir l'emplacement",
     "description": "Toi chercher endroit sûr, pas de vent, pas de grandes tiges feuillues ou de choses chaudes. Toi nettoyer partout partout autour, au moins 1 mètre.",
-    "image": "/src/assets/fire/WikiFeu_1 .png"
+    "image": "fire/WikiFeu_1 .png"
   },
   {
     "id": 2,
     "title": "2 - Préparer le sol",
     "description": "Toi creuser un peu dans le sol ou toi mettre pierres en cercle pour faire barrière.",
-    "image": "/src/assets/fire/WikiFeu_2.png"
+    "image": "fire/WikiFeu_2.png"
   },
   {
     "id": 3,
     "title": "3 - Rassembler le matériel",
     "description": "Toi collecter trois types de bois : Petit bois (trucs fins et secs comme herbe sèche, feuilles, mousse), brindilles (petites branches fines), et bûches (branches épaisses et bois coupé).",
-    "image": "/src/assets/fire/WikiFeu_3.png"
+    "image": "fire/WikiFeu_3.png"
   },
   {
     "id": 4,
     "title": "4 - Construire le foyer",
     "description": "Toi commencer avec petit tas petit bois, puis entourer de brindilles en forme de tipi ou pyramide. Ensuite, toi ajouter quelques bûches autour, bien espacées.",
-    "image": "/src/assets/fire/WikiFeu_4.png"
+    "image": "fire/WikiFeu_4.png"
   },
   {
     "id": 5,
     "title": "5 - Allumer le feu",
     "description": "Toi frotter petite brindille contre plus grosse ou utiliser pierre pour faire étincelles et allumer petit bois. Toi souffler doucement pour faire grandir flammes.",
-    "image": "/src/assets/fire/WikiFeu_5.png"
+    "image": "fire/WikiFeu_5.png"
   },
   {
     "id": 6,
     "title": "6 - Entretenir le feu",
     "description": "Toi ajouter petit à petit des brindilles puis des bûches pour nourrir le feu, mais pas trop pour pas étouffer.",
-    "image": "/src/assets/fire/WikiFeu_6.png"
+    "image": "fire/WikiFeu_6.png"
   },
   {
     "id": 7,
     "title": "7 - Éteindre le feu",
     "description": "Avant partir, toi vérifier que feu bien éteint. Toi verser de l'eau dessus, puis remuer les cendres pour être sûr qu'aucun braisier reste actif.",
-    "image": "/src/assets/fire/WikiFeu_7.png"
+    "image": "fire/WikiFeu_7.png"
   }
 ]
