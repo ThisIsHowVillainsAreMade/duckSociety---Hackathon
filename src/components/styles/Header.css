@@ -29,13 +29,12 @@
   }
 }
 
-
-
 #fire-header {
   background: url("/src/assets/fire/header-fire.png");
   font-family: "Love", "sans-serif";
-  background-size: cover;
+  background-size: contain;
   font-size: 1.8rem;
+  background-attachment: fixed;
 }
 
 #fire-header h1 {
