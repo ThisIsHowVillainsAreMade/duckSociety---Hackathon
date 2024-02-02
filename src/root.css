@@ -1,9 +1,9 @@
-:root {
-  --dark-grey: #141414;
-  --light-grey: #9C9C9C;
-}
-
 *{
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --dark-grey: #141414;
+  --light-grey: #9C9C9C;
 }

@@ -11,14 +11,12 @@ const router = createBrowserRouter([
   {
     element: <App />,
     children: [
-      { 
-        path: "/", 
-        element: <Home /> 
-      },
-      {path: "/tuto-feu",element: <Fire />},
+      { path: "/", element: <Home /> },
+      { path: "/tuto-feu", element: <Fire /> },
       { path: "/mallhalla", element: <Shop /> },
       { path: "/mallhalla/:id", element: <Basket /> },
       { path: "/balance-ta-sorciere", element: <Witch /> },
+      // { path: "/testform", element: <WitchForm /> },
     ],
   },
 ]);
