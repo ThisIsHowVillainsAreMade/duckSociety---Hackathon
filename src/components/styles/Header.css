@@ -1,46 +1,70 @@
 @font-face {
-    font-family: 'Norse';
-    src: url(../../assets/shop/Norse.otf);
+  font-family: "Norse";
+  src: url(../../assets/shop/Norse.otf);
+}
+@font-face {
+  font-family: "Love";
+  src: url(../../assets/fonts/LoveYaLikeASister-Regular.ttf);
 }
 .Header {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#shop-header{
-    background: url("../../assets/shop/Mallhalla.jpeg");
-    background-position: 50% 30%;
-    filter: grayscale(100%) ;
-    font-family: 'Norse','sans-serif';
-    background-size: cover;
-    color: white;
-    font-size: 5rem;
+#shop-header {
+  background: url("../../assets/shop/Mallhalla.jpeg");
+  background-position: 50% 30%;
+  filter: grayscale(100%);
+  font-family: "Norse", "sans-serif";
+  background-size: cover;
+  color: white;
+  font-size: 5rem;
+}
+@media screen and (max-width: 1023px) {
+  #shop-header {
+    font-size: 3rem;
+  }
 }
 
-#shop-header h1{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#shop-header h1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#shop-header h1::before{
-    filter: brightness(50%);
+#shop-header h1::before {
+  filter: brightness(50%);
 }
 
-
-
-#fire-header{
-    background: url("à mettre");
-    font-family: à mettre;
-    background-size: cover;
+#fire-header {
+  background: url("/src/assets/fire/header-fire.png");
+  font-family: "Love", "sans-serif";
+  background-size: cover;
+  font-size: 1.8rem;
 }
-#witch-header{
-    background: url("à mettre");
-    font-family: à mettre;
-    background-size: cover;
+
+#fire-header h1 {
+  font-family: "Love", "sans-serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#witch-header {
+  background: url("../../assets/witch/sorciere.png");
+  font-family: "MedievalSharp";
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 3.5rem;
+
+  @media (max-width: 560px) {
+    #fire-header {
+      font-size: 1rem;
+    }
+  }
 }

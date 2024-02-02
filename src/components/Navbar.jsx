@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import DuckCard from "./DuckCard";
 import "./styles/Navbar.css";
 import HamburgerIcon from "../assets/home/icon-hamburger.svg"
@@ -32,4 +33,9 @@ function Navbar({toggleModalTeam}) {
     </nav>
   )
 }
+
+Navbar.propTypes = {
+  toggleModalTeam: PropTypes.any,
+};
+
 export default Navbar;

@@ -7,14 +7,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--text);
-  position: relative;
+  color: white;
+  /* position: relative; */
   width: 100svw;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
   width: 50%;
-  margin-left: 7svw;
+  /* margin-left: 7svw; */
   font-family: "MedievalSharp";
 }
 
@@ -37,10 +37,11 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 4px;
   font-size: 16px;
   font-family: "MedievalSharp";
+  color: var(--light-grey);
 }
 
 .optionSelect {
@@ -53,6 +54,8 @@
 .textareaForm {
   transform: scale(1);
   transition: 0.5s;
+  background: #dddddd16;
+  color: var(--light-grey);
 }
 
 :is(.formInput, .selection, .textareaForm):focus {
@@ -60,7 +63,7 @@
 }
 
 :is(.formInput, .submitButton, .selection, .textareaForm):hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.5s;
 }
 
@@ -69,7 +72,7 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 4px;
   min-height: 10svh;
   max-height: 15svh;

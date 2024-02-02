@@ -1,0 +1,19 @@
+.witchPage {
+  background-color: var(--dark-grey);
+  /* background: #202020; */
+}
+
+.witchDescription,
+.sponsor {
+  font-family: "MedievalSharp";
+  text-align: center;
+}
+
+.sponsor {
+  line-height: 0.1svh;
+  font-size: 0.7em;
+}
+
+.formAndWitch {
+  display: flex;
+}
