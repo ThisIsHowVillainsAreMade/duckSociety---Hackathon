@@ -3,15 +3,18 @@ import stepsData from "../../datafire.json";
 import "./styles/TutorialSteps.css";
 
 const TutorialSteps = () => {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep, setCurrentStep] = useState(0); //  Etape actuelle du tutoriel, débutant à 0
 
   const nextStep = () => {
+    // Ca nous permet de passer à l'étape suivante, incrémentant currentStep
     if (currentStep < stepsData.length - 1) {
       setCurrentStep((prev) => prev + 1);
     }
   };
 
   const prevStep = () => {
+    // Fonction pour revenir à l'étape précédente, décrémentant currentStep si ce n'est pas la première étape.
+
     if (currentStep > 0) {
       setCurrentStep((prev) => prev - 1);
     }

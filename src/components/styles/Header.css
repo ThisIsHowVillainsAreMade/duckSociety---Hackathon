@@ -40,19 +40,24 @@
   background: url("/src/assets/fire/header-fire.png");
   font-family: "Love", "sans-serif";
   background-size: cover;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 #fire-header h1 {
   font-family: "Love", "sans-serif";
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #witch-header {
   background: url("à mettre");
   font-family: à mettre;
   background-size: cover;
+}
+
+@media (max-width: 560px) {
+  #fire-header {
+    font-size: 1rem;
+  }
 }
