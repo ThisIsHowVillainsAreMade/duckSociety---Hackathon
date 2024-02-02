@@ -2,7 +2,7 @@
 
 :root {
     --backgroundHome: #020312;
-    --gradientHome: linear-gradient(45deg, #3872c9 0%, #9149cc 100%);
+    --gradientHome: linear-gradient(45deg, #0D749F 0%, #15C6C5 50%, #692B99 100%);
     --gradientBlurHome: linear-gradient(45deg, #3872c967 0%, #9149cc67 100%);
     --gradientShadowHome: -2px 4px 10px #3872c967,
         2px -4px 10px #9149cc67;
@@ -14,4 +14,26 @@
 #homeContainer {
     background: var(--backgroundHome);
     min-height: 100svh;
+}
+
+#mainHome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    #homeTitle {
+        text-align: center;
+        margin: 5rem 0;
+        text-shadow: var(--gradientShadowHome);
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+    }
 }

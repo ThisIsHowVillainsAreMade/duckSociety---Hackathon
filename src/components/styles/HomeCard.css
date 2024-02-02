@@ -1,0 +1,76 @@
+#homeCardContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+    .homeCard {
+        min-width: 300px;
+        max-width: 450px;
+        width: 30%;
+        aspect-ratio: 50/50;
+        background: var(--gradientHome);
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            display: block;
+            height: calc(100% - 4px);
+            width: calc(100% - 4px);
+            margin: 2px;
+            background: linear-gradient(to bottom left, transparent 50px, var(--backgroundHome) 1px);
+            position: absolute;
+            top: 0;
+        }
+
+        &::after {
+            content: "";
+            height: 70px;
+            width: 70px;
+            display: block;
+            background: var(--backgroundHome);
+            position: absolute;
+            top: 0;
+            right: 0;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+            transform: rotate(180deg);
+        }
+
+        .homeCardContent {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: calc(100% - 40px);
+            padding: 20px;
+            z-index: 1;
+
+            h2 {
+                font-size: 1.7rem;
+                width: 90%;
+            }
+
+            p {
+                margin-top: 2rem;
+            }
+
+            a {
+                margin-top: auto;
+                align-self: flex-end;
+                text-decoration: none;
+
+                &:visited {
+                    color: #fff;
+                }
+
+                &::after {
+                    content: ">";
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+
+}
