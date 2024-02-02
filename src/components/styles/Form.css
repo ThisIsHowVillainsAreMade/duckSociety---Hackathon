@@ -56,6 +56,7 @@
   transition: 0.5s;
   background: #dddddd16;
   color: var(--light-grey);
+  margin-bottom: 2svh;
 }
 
 :is(.formInput, .selection, .textareaForm):focus {
@@ -65,6 +66,10 @@
 :is(.formInput, .submitButton, .selection, .textareaForm):hover {
   transform: scale(1.03);
   transition: 0.5s;
+}
+
+div.preferencesForDeath {
+  margin-top: 3svh;
 }
 
 .textareaForm {
@@ -83,7 +88,7 @@
 .radiosQuestion {
   display: flex;
   flex-direction: column;
-  line-height: 0.1svh;
+  line-height: 5svh;
   /* text-align: center; */
 }
 
