@@ -6,6 +6,7 @@
     color: #fff;
     min-height: 100vh;
     font-family: 'Norse', 'sans-serif';
+    overflow: hidden;
 }
 
 .Basket button,.backToMallHalla {

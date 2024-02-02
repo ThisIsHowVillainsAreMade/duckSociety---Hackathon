@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./styles/Basket.css";
+import BurgerMenu from "../components/BurgerMenu";
 
 const Basket = () => {
   const [basketData, setBasketData] = useState([]);
@@ -97,7 +98,7 @@ const Basket = () => {
   };
   return (
     <div className="Basket">
-
+      <BurgerMenu/>
 
       {basketData.map((article) => (
         <div key={article.id} className="Product">
