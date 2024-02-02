@@ -1,9 +1,15 @@
-:root {
-  --dark-grey: #141414;
-  --light-grey: #9c9c9c;
-}
-
 * {
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --dark-grey: #141414;
+  --light-grey: #9C9C9C;
+}
+
+body {
+  overflow-x: hidden;
+
+
 }
