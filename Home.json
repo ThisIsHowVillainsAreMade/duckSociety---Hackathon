@@ -1,0 +1,22 @@
+{
+  "homeCard":  [
+    {
+        "id": 1,
+        "name": "La préhistoire",
+        "desc": "Si toi pas savoir faire feu nous apprendre toi !",
+        "link": "/tuto-feu"
+    },
+    {
+        "id": 2,
+        "name": "Ère viking",
+        "desc": "Skal mon amis ! Si tu veux des armes tu es au bon endroit !",
+        "link": "/mallhalla"
+    },
+    {
+        "id": 3,
+        "name": "L'époque baroque",
+        "desc": "Oyez Oyez mon brave gueux, venez donc dénoncer la sorcière qui vis près de chez vous",
+        "link": "/balance-ta-sorciere"
+    }
+]
+}
