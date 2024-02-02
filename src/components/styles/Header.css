@@ -24,9 +24,9 @@
   font-size: 5rem;
 }
 @media screen and (max-width: 1023px) {
-    #shop-header{
-        font-size: 3rem;
-    }
+  #shop-header {
+    font-size: 3rem;
+  }
 }
 
 #shop-header h1 {
@@ -56,13 +56,15 @@
 }
 
 #witch-header {
-  background: url("à mettre");
-  font-family: à mettre;
+  background: url("../../assets/witch/sorciere.png");
+  font-family: "MedievalSharp";
   background-size: cover;
-}
+  background-attachment: fixed;
+  font-size: 3.5rem;
 
-@media (max-width: 560px) {
-  #fire-header {
-    font-size: 1rem;
+  @media (max-width: 560px) {
+    #fire-header {
+      font-size: 1rem;
+    }
   }
 }
