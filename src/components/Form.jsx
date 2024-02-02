@@ -14,8 +14,14 @@ function Form() {
       const witchFirstname = event.target.witchFirstName.value;
       const witchLastname = event.target.witchLastName.value;
       const witchCity = event.target.witchCity.value;
-      alert(`Oyé Oyé , ${firstname} ${lastname} ! Merci de nous avoir soumis votre formulaire. Nous faisons confiance à nos chers villageois. L'inquisition viendra arrêter ${witchFirstname} ${witchLastname} à ${witchCity} et son exécution aura lieu dans les 48H. Sauf si elle est rousse, celle-ci sera exécutée dans les 12H. Si elle est chauve: 6H, car il s'agit potentiellement d'une rousse qui se cache et les chauves maîtrisent une magie datant de l'aube de l'humanité.
+      alert(`Oyé Oyé , ${firstname} ${lastname} ! 
+      \n
+      Merci de nous avoir soumis votre formulaire. Nous faisons confiance à nos chers villageois. 
+      \n
+      L'inquisition viendra arrêter ${witchFirstname} ${witchLastname} à ${witchCity} et son exécution aura lieu dans les 48H. Sauf si elle est rousse, celle-ci sera exécutée dans les 12H. Si elle est chauve: 6H, car il s'agit potentiellement d'une rousse qui se cache et les chauves maîtrisent une magie datant de l'aube de l'humanité.
+      \n
       Nous ne vérifierons pas vos arguments car nous croyons pleinement en vous et vos témoignages.
+      \n
       Nous vous confirmons que l'inquisition vous fournira des places VIP pour l'éxécution de ${witchFirstname} ${witchLastname}.`);
     }
   };
