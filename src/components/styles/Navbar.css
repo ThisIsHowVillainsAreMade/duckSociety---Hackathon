@@ -27,7 +27,7 @@ nav {
             margin: 5px 1rem;
             align-self: end;
             position: relative;
-            z-index: 5;
+            z-index: 2;
             cursor: pointer;
             background: #e4e4e400;
 

@@ -5,7 +5,7 @@ import "./styles/Navbar.css";
 import HamburgerIcon from "../assets/home/icon-hamburger.svg"
 
 
-function Navbar({toggleModalTeam}) {
+function Navbar({toggleModalTeam, handleSelectMain}) {
 
   const [burgerClicked,setBurgerClicked] = useState(false)
 
@@ -13,19 +13,24 @@ function Navbar({toggleModalTeam}) {
       setBurgerClicked(!burgerClicked)
   }
 
+  const handleMenuItem = (item) => {
+    handleSelectMain(item);
+  };
+
+
   return (
     <nav>
       <h2 id="logo">DuckSociety</h2>
       <ul>
-        <li id="menu">Accueil</li>
-        <li id="notice">Notice</li>
+        <li id="menu" onClick={() => handleMenuItem("Accueil")}>Accueil</li>
+        <li id="notice" onClick={() => handleMenuItem("Notice")}>Notice</li>
         <li id="about" onClick={toggleModalTeam} >A propos</li>
       </ul>
       <img src={HamburgerIcon} alt="HamburgerIcon" id="HamburgerIcon" onClick={handleBurgerClick} />
       <div id="burgerContainer" className={burgerClicked ? "on" : ""}>
         <ul>
-          <li>Accueil</li>
-          <li>Notice</li>
+          <li onClick={() => handleMenuItem("Accueil")}>Accueil</li>
+          <li onClick={() => handleMenuItem("Notice")}>Notice</li>
           <li onClick={toggleModalTeam} >A propos</li>
         </ul>
       </div>
@@ -36,6 +41,7 @@ function Navbar({toggleModalTeam}) {
 
 Navbar.propTypes = {
   toggleModalTeam: PropTypes.any,
+  handleSelectMain: PropTypes.any,
 };
 
 export default Navbar;

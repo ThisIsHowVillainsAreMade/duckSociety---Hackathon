@@ -1,5 +1,5 @@
 .fire-main {
-  height: calc(100vh - 300px);
+  min-height: calc(100vh - 300px);
   background-image: url(../../assets/fire/background.webp);
   background-color: var(--dark-grey);
   display: flex;

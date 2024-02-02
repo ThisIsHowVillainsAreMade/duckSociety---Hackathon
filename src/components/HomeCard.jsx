@@ -14,7 +14,7 @@ function HomeCard () {
             <div className="homeCardContent">
                 <h2>{card.name}</h2>
                 <p>{card.desc}</p>
-                <Link href={card.link} className="exploreLink" >Explore</Link>
+                <Link to={card.link} className="exploreLink" >Explore</Link>
             </div>
         </div>
         ))}
