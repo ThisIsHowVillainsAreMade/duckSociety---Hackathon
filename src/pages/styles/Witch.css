@@ -1,3 +1,7 @@
+.witchPage {
+  background-color: var(--dark-grey);
+}
+
 .witchDescription,
 .sponsor {
   font-family: "MedievalSharp";

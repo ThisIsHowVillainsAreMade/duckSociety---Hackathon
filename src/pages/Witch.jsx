@@ -6,7 +6,7 @@ import SplineWitch from "../components/SplineWitch";
 
 function Witch() {
   return (
-    <>
+    <div className="witchPage">
       <Header headerId="witch-header" headerTitle="BALANCE TA SORCIERE" />
       <h2 className="witchDescription">
         Voisine peu délicate, mégère aux multiples chats? Si vous avez un doute
@@ -17,7 +17,7 @@ function Witch() {
         <Form />
         <SplineWitch />
       </section>
-    </>
+    </div>
   );
 }
 export default Witch;
