@@ -2,10 +2,12 @@
   font-family: "Norse";
   src: url(../../assets/shop/Norse.otf);
 }
+
 @font-face {
   font-family: "Love";
   src: url(../../assets/fonts/LoveYaLikeASister-Regular.ttf);
 }
+
 .Header {
   height: 300px;
   width: 100%;
@@ -23,6 +25,7 @@
   color: white;
   font-size: 5rem;
 }
+
 @media screen and (max-width: 1023px) {
   #shop-header {
     font-size: 3rem;
@@ -32,9 +35,9 @@
 #fire-header {
   background: url("/src/assets/fire/header-fire.png");
   font-family: "Love", "sans-serif";
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 1.8rem;
-  background-attachment: fixed;
 }
 
 #fire-header h1 {
@@ -50,4 +53,10 @@
   background-size: cover;
   background-attachment: fixed;
   font-size: 3.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  #fire-header h1 {
+    font-size: 2rem;
+  }
 }

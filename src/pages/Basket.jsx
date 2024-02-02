@@ -1,25 +1,29 @@
 /* eslint-disable no-unused-vars */
+// Basket.jsx
+
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import "./styles/Basket.css";
 import BurgerMenu from "../components/BurgerMenu";
 import shopData from "../../Shop.json";
+import { createBrowserHistory } from 'history';
+
+
 
 const Basket = () => {
   const [basketData, setBasketData] = useState([]);
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(0); // Ajout de cette ligne
   const [totalPrice, setTotalPrice] = useState(0);
+  const history = createBrowserHistory();
   const { id } = useParams();
 
   useEffect(() => {
     const fetchArticles = () => {
       try {
-        console.log("Shop Data:", shopData);
-  
         if (!shopData || !Array.isArray(shopData.articles)) {
           throw new Error("Le fichier JSON est incorrect ou vide.");
         }
-  
+
         const filteredData = shopData.articles.filter((article) => article.id == id);
         if (filteredData.length > 0) {
           setBasketData(filteredData);
@@ -31,7 +35,7 @@ const Basket = () => {
         console.error("Erreur au chargement des articles:", error.message);
       }
     };
-  
+
     fetchArticles();
   }, [id]);
 
@@ -97,6 +101,7 @@ const Basket = () => {
       </div>
     ));
   };
+
   const handlePaymentClick = () => {
     alert(
       `Le montant total à payer est de ${totalPrice.toFixed(
@@ -104,20 +109,18 @@ const Basket = () => {
       )} DC.\nPayes ou tu n'iras pas au Valhalla !`
     );
     localStorage.clear();
+    history.push('/');
     window.location.reload();
   };
+
   return (
     <div className="Basket">
-      <BurgerMenu/>
+      <BurgerMenu />
 
       {basketData.map((article) => (
         <div key={article.id} className="Product">
           <div className="ProductMask">
-            <img
-              src={article.img}
-              alt={article.alt}
-              className="ProductPic"
-            />
+            <img src={article.img} alt={article.alt} className="ProductPic" />
           </div>
           <div className="ProductDesc">
             <h2 className="ProductName">{article.alt}</h2>
@@ -131,13 +134,14 @@ const Basket = () => {
         {getBasketItems()}
         <p>Total: {totalPrice.toFixed(2)} DC</p>
         <div className="basketNav">
-        <Link to={"/Mallhalla"} style={{textDecoration: "none"}} className="backToMallHalla">
-          <p>Retour</p>
-        </Link>
-        <button onClick={handlePaymentClick}>Payer</button>
+          <Link to="/Mallhalla" style={{ textDecoration: "none" }} className="backToMallHalla">
+            <p>Retour</p>
+          </Link>
+          <button onClick={handlePaymentClick}>Payer</button>
         </div>
       </div>
     </div>
   );
 };
+
 export default Basket;
