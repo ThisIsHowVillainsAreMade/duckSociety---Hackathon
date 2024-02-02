@@ -3,10 +3,12 @@ import "./styles/Witch.css";
 import Header from "../components/Header";
 import Form from "../components/Form";
 import SplineWitch from "../components/SplineWitch";
+import BurgerMenu from "../components/BurgerMenu";
 
 function Witch() {
   return (
     <div className="witchPage">
+      <BurgerMenu />
       <Header headerId="witch-header" headerTitle="BALANCE TA SORCIERE" />
       <h2 className="witchDescription">
         Voisine peu délicate, mégère aux multiples chats? Si vous avez un doute

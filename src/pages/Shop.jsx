@@ -2,6 +2,7 @@ import "./styles/Shop.css";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import BurgerMenu from "../components/BurgerMenu";
 
 function Shop() {
   const [articlesData, setArticleData] = useState([]);
@@ -22,6 +23,7 @@ function Shop() {
 
   return (
     <div className="Shop">
+      <BurgerMenu />
       <Header headerId="shop-header" headerTitle="Mallhalla" />
       <div className="Articles">
         {articlesData.map((article) => (

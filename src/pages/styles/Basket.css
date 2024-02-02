@@ -1,76 +1,98 @@
-
-.Basket{
+.Basket {
     background-color: var(--dark-grey);
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
     min-height: 100vh;
-    font-family: 'Norse','sans-serif';
+    font-family: 'Norse', 'sans-serif';
+    overflow: hidden;
 }
 
-.Product{
+.Basket button,.backToMallHalla {
+    transition: all linear .2s;
+}
+
+.Basket button:hover,.backToMallHalla:hover{
+    scale: 1.2;
+}
+
+.Product {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 50px;
-
+    margin-left: 20px;
 }
-.ProductMask{
+
+.ProductMask {
     mask-image: url(../../assets/shop/mask2.png);
-    height: 400px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     mask-size: contain;
     mask-repeat: no-repeat;
 }
 
-.ProductPic{
-    height: 400px;
+.ProductPic {
+    width: 100%;
+    height: auto;
 }
 
-.ProductDesc{
+.ProductDesc {
     margin: 15px;
+    text-align: center;
 }
 
-.ProductName{
+.ProductName {
     font-size: 2rem;
     color: #fff;
+    text-align: center;
 }
 
-.ProductPrice{
+.ProductPrice {
     font-size: 1.2rem;
     color: var(--light-grey);
+    text-align: center;
 }
 
-.BasketItems{
-    margin: 50px;
-}
-
-.BasketItems h1,p, h2{
+.BasketItems {
     margin: 20px;
 }
 
-.boughtItem{
-    /* background-color: red; */
+.BasketItems h1,
+.BasketItems p,
+.BasketItems h2 {
+    margin: 10px;
+}
+
+.boughtItem {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: #82828219;
     margin: 10px;
 }
 
-.boughtItemDesc{
+.boughtItemDesc {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+    text-align: center;
 }
-.boughtItem img{
-    height: 150px;
+.boughtItemDesc p{
+    color: var(--light-grey);
+}
+
+.boughtItem img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
     margin: 10px;
     border-radius: 5px;
 }
 
-.boughtItem button{
+.boughtItem button,
+.Product button,
+.BasketItems button {
     margin: 16px;
     height: 50px;
     width: 100px;
@@ -79,35 +101,58 @@
     border: none;
     color: #fff;
     font-family: 'Norse';
+
 }
-.boughtItem button:focus{
-    border: none;
+.backToMallHalla{
+    background-color: #82828219;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    clip-path: polygon(100% 0%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    display: flex;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.Product button{
-    margin: 16px;
-    height: 50px;
-    width: 100px;
-    background-color: #82828219;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-family: 'Norse';
-}
-.Product button:focus{
-    border: none;
+
+
+
+
+.boughtItem button:focus,
+.Product button:focus,
+.BasketItems button:focus,
+.backToMallHalla:focus {
+    outline: none;
 }
 
-.BasketItems button{
-    margin: 16px;
-    height: 50px;
-    width: 100px;
-    background-color: #82828219;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-family: 'Norse';
+@media only screen and (max-width: 768px) {
+    .Basket {
+        padding: 20px;
+    }
+
+    .Product {
+        margin-left: 10px;
+    }
+
+    .ProductDesc {
+        margin: 10px;
+    }
+
+    .BasketItems {
+        margin: 10px;
+    }
+
+    .boughtItem{
+        flex-direction: column;
+    }
 }
-.BasketItems button:focus{
-    border: none;
+
+.basketNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+

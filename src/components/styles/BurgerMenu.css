@@ -1,6 +1,7 @@
 /* conteneur */
 .burger-menu-container {
   position: relative;
+  z-index: 3;
 }
 
 /* taille icone contient barres */

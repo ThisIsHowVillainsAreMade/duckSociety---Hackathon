@@ -1,9 +1,14 @@
+.Shop{
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
 .Articles{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
     background-color: var(--dark-grey);
+    overflow: hidden;
 }
 
 .Shop .Articles .Article {
@@ -54,3 +59,4 @@
     height: 250px;
     width: 250px;
 }
+

@@ -29,17 +29,7 @@
   }
 }
 
-#shop-header h1 {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-#shop-header h1::before {
-  filter: brightness(50%);
-}
 
 #fire-header {
   background: url("/src/assets/fire/header-fire.png");
@@ -61,10 +51,4 @@
   background-size: cover;
   background-attachment: fixed;
   font-size: 3.5rem;
-
-  @media (max-width: 560px) {
-    #fire-header {
-      font-size: 1rem;
-    }
-  }
 }
