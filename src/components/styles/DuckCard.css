@@ -1,0 +1,85 @@
+.overlayTeam {
+    display: none;
+    opacity: 0;
+    background-color: #020312ee;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    transition: 1s;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}
+
+.aboutWrap {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 280px;
+    padding: 15px;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    animation: hereComeTheDuck 7s;
+}
+
+.aboutUsCard {
+    width: 100%;
+    height: 100%;
+    box-shadow: -2px 4px 10px #3872c9,
+        2px -4px 10px #9149cc;
+    border-radius: 20px;
+    background-color: #020312;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.front {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    color: #fff;
+}
+
+.back {
+    background: #020312 url("/duckSoSmall.png");
+    background-size: contain;
+    background-position: center;
+    transform: rotateY(180deg);
+}
+
+.dudeContainer {
+    display: flex;
+    align-items: center;
+    font-family: 'Bodony', sans-serif;
+    font-size: 1.8rem;
+    padding: 15px;
+}
+
+.socialMedia {
+    height: 40px;
+}
+
+@keyframes hereComeTheDuck {
+    0% {
+        top: -100vh;
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+
+    80% {
+        top: 50%;
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
