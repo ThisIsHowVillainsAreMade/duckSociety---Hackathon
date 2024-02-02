@@ -1,0 +1,162 @@
+.fire-main {
+  height: calc(100vh - 300px);
+  background-image: url(../../assets/fire/background.webp);
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fire-main-title {
+  margin: 4rem;
+  color: var(--light-grey);
+  font-family: "Love", "sans-serif";
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.Fire-step-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.fire-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.fire-image {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 2rem;
+}
+
+.fire-details-container {
+  max-width: 40%;
+}
+
+.fire-title {
+  font-size: 2em;
+  margin-bottom: 1rem;
+  color: var(--light-grey);
+  font-family: "Love", "sans-serif";
+}
+
+.fire-description {
+  font-size: 1.2rem;
+  width: 40vw;
+  margin-bottom: 2.5rem;
+  font-family: "Love", "sans-serif";
+  color: var(--light-grey);
+}
+
+.fire-navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.fire-prev,
+.fire-next {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: "Love", "sans-serif";
+  color: #000;
+  text-decoration: none;
+}
+
+.fire-prev:hover,
+.fire-next:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 1100) {
+  .fire-main-title {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  .fire-step-container {
+    padding: 1rem;
+  }
+
+  .fire-image-container {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .fire-image {
+    max-width: 40%;
+    margin-bottom: 1rem;
+  }
+
+  .fire-details-container {
+    max-width: 100%;
+  }
+
+  .fire-title {
+    font-size: 1.5rem;
+  }
+
+  .fire-navigation {
+    width: 100%;
+  }
+
+  .fire-prev,
+  .fire-next {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fire-main-title {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .fire-step-container {
+    padding: 1rem;
+  }
+
+  .fire-image-container {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .fire-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .fire-details-container {
+    max-width: 100%;
+  }
+
+  .fire-title {
+    font-size: 1.5rem;
+  }
+
+  .fire-description {
+    font-size: 0.7rem;
+  }
+
+  .fire-navigation {
+    width: 100%;
+  }
+
+  .fire-prev,
+  .fire-next {
+    font-size: 0.8rem;
+  }
+}
