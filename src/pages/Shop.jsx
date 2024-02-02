@@ -22,10 +22,10 @@ function Shop() {
 
   return (
     <div className="Shop">
-      <Header headerId="shop-header" headerTitle="Malhalla" />
+      <Header headerId="shop-header" headerTitle="Mallhalla" />
       <div className="Articles">
         {articlesData.map((article) => (
-          <Link key={article.id} style={{textDecoration: 'none'}}  to="#">
+          <Link key={article.id} style={{textDecoration: 'none'}}  to={`/mallhalla/${article.id}`}>
           <article className="Article">
             <div className="img-mask">
             <img src={`http://localhost:7777/${article.img}`} alt={article.alt} />

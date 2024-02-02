@@ -5,6 +5,7 @@ import App from "./App";
 import Home from "./pages/Home"
 import Fire from  "./pages/Fire"
 import Shop from "./pages/Shop"
+import Basket from "./pages/Basket";
 import Witch from "./pages/Witch"
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       },
       {path: "/tuto-feu",element: <Fire />},
       { path: "/mallhalla", element: <Shop /> },
+      { path: "/mallhalla/:id", element: <Basket /> },
       { path: "/balance-ta-sorciere", element: <Witch /> },
     ],
   },
