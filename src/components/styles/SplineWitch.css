@@ -2,9 +2,10 @@
   /* width: 610px !important;
   height: 777px !important; */
   width: 50vw !important;
-  height: 77.7vh !important;
+  /* height: 77.7vh !important; */
+  height: 100vh !important;
   position: fixed !important;
-  bottom: -15% !important;
+  bottom: -25% !important;
   right: 0;
   opacity: 0.7;
 }
