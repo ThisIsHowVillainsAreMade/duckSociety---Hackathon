@@ -1,6 +1,6 @@
 .witchPage {
   background-color: var(--dark-grey);
-  /* background: #202020; */
+  overflow-x: hidden;
 }
 
 .witchDescription,
@@ -16,4 +16,26 @@
 
 .formAndWitch {
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .witchPage {
+    overflow-x: hidden;
+  }
+
+  #witch-header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .splineCanva {
+    display: none;
+  }
+  .formAndWitch {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .witchForm {
+    width: 100vw !important;
+  }
 }
