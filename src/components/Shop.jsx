@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import BurgerMenu from "../components/BurgerMenu";
 
 function Shop() {
+
   const articles = Articles.articles
 
   return (
@@ -16,7 +17,7 @@ function Shop() {
           <Link key={article.id} style={{textDecoration: 'none'}}  to={`/mallhalla/${article.id}`}>
           <article className="Article">
             <div className="img-mask">
-            <img src={article.img} alt={article.alt} />
+            <img src={`http://localhost:7777/${article.img}`} alt={article.alt} />
             </div>
             <h2 className="name">{article.alt}</h2>
             <p className="price">{article.price}</p>

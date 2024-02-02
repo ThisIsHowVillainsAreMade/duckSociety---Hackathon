@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./styles/Basket.css";
 import BurgerMenu from "../components/BurgerMenu";
+import shopData from "../../Shop.json";
 
 const Basket = () => {
   const [basketData, setBasketData] = useState([]);
@@ -10,24 +12,32 @@ const Basket = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchArticles = async () => {
+    const fetchArticles = () => {
       try {
-        const articlesResponse = await fetch("http://localhost:7777/articles");
-        const data = await articlesResponse.json();
-        const filteredData = data.filter((article) => article.id == id);
-        setBasketData(filteredData);
-        console.info("Product:", filteredData);
+        console.log("Shop Data:", shopData);
+  
+        if (!shopData || !Array.isArray(shopData.articles)) {
+          throw new Error("Le fichier JSON est incorrect ou vide.");
+        }
+  
+        const filteredData = shopData.articles.filter((article) => article.id == id);
+        if (filteredData.length > 0) {
+          setBasketData(filteredData);
+          console.info("Product:", filteredData);
+        } else {
+          console.error("Aucun article trouvé avec l'ID:", id);
+        }
       } catch (error) {
-        console.error("Erreur au chargement des articles");
+        console.error("Erreur au chargement des articles:", error.message);
       }
     };
-
+  
     fetchArticles();
   }, [id]);
 
   useEffect(() => {
     updateTotalPrice();
-  }, []);
+  }, [basketData]);
 
   const updateTotalPrice = () => {
     const existingBasket = JSON.parse(localStorage.getItem("basket")) || [];
@@ -48,7 +58,7 @@ const Basket = () => {
     updateTotalPrice();
   };
 
-  const handleRemoveFromBasket = (name, price) => {
+  const handleRemoveFromBasket = (name) => {
     const existingBasket = JSON.parse(localStorage.getItem("basket")) || [];
     const updatedBasket = existingBasket.filter((item) => item.alt !== name);
     localStorage.setItem("basket", JSON.stringify(updatedBasket));
@@ -74,7 +84,7 @@ const Basket = () => {
 
     return groupedBasket.map((item, index) => (
       <div key={index} className="boughtItem">
-        <img src={`http://localhost:7777/${item.img}`} alt={item.alt} />
+        <img src={item.img} alt={item.alt} />
         <div className="boughtItemDesc">
           <h2>
             {item.alt} x {item.quantity}
@@ -104,7 +114,7 @@ const Basket = () => {
         <div key={article.id} className="Product">
           <div className="ProductMask">
             <img
-              src={`http://localhost:7777/${article.img}`}
+              src={article.img}
               alt={article.alt}
               className="ProductPic"
             />
