@@ -12,6 +12,16 @@
         border-radius: 5px;
         position: relative;
         z-index: 1;
+        transition: 1s;
+
+        &:hover {
+            transform: translateY(-8%);
+
+            &::before {
+                background: var(--gradientBlurHome);
+                filter: blur(50%);
+            }
+        }
 
         &::before {
             content: "";
@@ -23,6 +33,8 @@
             position: absolute;
             top: 0;
         }
+
+
 
         &::after {
             content: "";
@@ -46,6 +58,7 @@
             padding: 20px;
             z-index: 1;
 
+
             h2 {
                 font-size: 1.7rem;
                 width: 90%;
@@ -53,9 +66,10 @@
 
             p {
                 margin-top: 2rem;
+                font-size: 1.2rem;
             }
 
-            a {
+            .exploreLink {
                 margin-top: auto;
                 align-self: flex-end;
                 text-decoration: none;
@@ -71,6 +85,18 @@
             }
         }
 
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    #homeCardContainer {
+        flex-direction: column;
+        align-items: center;
+
+        .homeCard {
+            margin-top: 2rem;
+        }
     }
 
 }

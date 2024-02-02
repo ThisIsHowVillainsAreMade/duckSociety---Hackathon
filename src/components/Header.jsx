@@ -1,4 +1,5 @@
 import "../components/styles/Header.css";
+import PropTypes from 'prop-types';
 
 function Header({ headerId, headerTitle }) {
   return (
@@ -8,4 +9,8 @@ function Header({ headerId, headerTitle }) {
   );
 }
 
+Header.propTypes = {
+  headerId: PropTypes.string,
+  headerTitle: PropTypes.any.isRequired,
+};
 export default Header;

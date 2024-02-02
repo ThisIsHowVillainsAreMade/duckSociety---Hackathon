@@ -27,7 +27,7 @@ nav {
             margin: 5px 1rem;
             align-self: end;
             position: relative;
-            z-index: 2;
+            z-index: 5;
             cursor: pointer;
             background: #e4e4e400;
 
@@ -84,8 +84,8 @@ nav {
 
 #burgerContainer {
     position: absolute;
-    /* opacity: 0; */
-    top: 3.5rem;
+    opacity: 0;
+    top: 100px;
     right: -220px;
 
     ul {

@@ -1,0 +1,21 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#gradientAnimation {
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    width: 220px;
+    height: 220px;
+    filter: blur(220px);
+    background: var(--gradientHome);
+    animation: rotate 15s infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}

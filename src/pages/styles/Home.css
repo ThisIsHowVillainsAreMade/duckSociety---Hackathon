@@ -14,6 +14,15 @@
 #homeContainer {
     background: var(--backgroundHome);
     min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    footer {
+        align-self: flex-end;
+        font-size: 0.8rem;
+        margin-right: 1rem;
+    }
 }
 
 #mainHome {
