@@ -1,0 +1,39 @@
+/* html {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+}
+
+#circularcursor:active {
+  height: 50px;
+  width: 50px;
+} */
+
+html {
+  cursor: none;
+}
+
+#circularcursor {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+}
+
+#circularcursor.clicked {
+  height: 50px;
+  width: 50px;
+}
